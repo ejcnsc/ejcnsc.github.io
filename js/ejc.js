@@ -25,7 +25,7 @@ $(document).ready(() => {
 
 
 
-    fetchDatabase("../database/base.json")
+    fetchDatabase("../database/base_v3.json")
     .then((result) => { 
         result.forEach(x => { 
             x.Id = x.Equipe.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -105,7 +105,7 @@ function createCard(model){
         row += `<div class="col-lg-4 col-md-12 mb-4">`;
         row += `    <div class='card cardFixedHeight'>`;
         row += `      <div class='bg-image hover-overlay ripple' data-mdb-ripple-color='light'>`;
-        row += `        <img src='${model.Imagem}' width=120 class='img-fluid' />`;
+        row += `        <img src='${model.Imagem}' width=420 class='img-fluid' />`;
         row += `        <a href='#!'>`;
         row += `          <div class='mask' style='background-color: rgba(251, 251, 251, 0.15);'></div>`;
         row += `        </a>`;
@@ -315,7 +315,11 @@ function createCardInformacoesJovem(model){
         row+=`      <div class="col-sm-12 m-0">`;
         row+=`        <div class="d-flex">`;
         row+=`          <div class="pr-4">`;
-        row+=`            <span class="badge badge-jovem"> </span>`;
+        if(model.RespondidoPor == "Diretor Espiritual"){
+            row+=`            <span class="badge badge-diretor-espiritual"> </span>`;
+        }else{
+            row+=`            <span class="badge badge-jovem"> </span>`;
+        }
         row+=`          </div>`;
         row+=`          <div>`;
         row+=`            <h6  class="pl-4">${model.NomeCompleto}</h6>`;

@@ -75,6 +75,16 @@
         content: "Amarelo";
     }
     
+    .badge-diretor-espiritual { 
+        background-color: orange;
+    }
+
+    span.badge-diretor-espiritual::after {
+        content: "Padre";
+    }
+
+    
+
 
     /* Carousel styling */
     #introCarousel,
@@ -85,14 +95,14 @@
     }
 
     .carousel-item:nth-child(1) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    background-image: url('../img/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     }
 
     .carousel-item:nth-child(2) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+    background-image: url('../img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

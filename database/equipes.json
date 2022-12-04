@@ -29,51 +29,58 @@
     },
     {
         "Id":"EXTERNA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/externa.JPG",
         "Frase":"Alegrei-me quando me disseram: Vamos à casa do Senhor.",
         "Versiculo":"Salmos 122:1",
         "Titulo": "Externa"
     },
     {
         "Id":"GERAL",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/geral.JPG",
         "Frase":"Conduz os humildes na justiça e lhes ensina o seu caminho",
         "Versiculo":"Salmos 25:9",
         "Titulo": "Geral"
     },
     {
         "Id":"LITURGIA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/brasao-nsc.png",
         "Frase":"Não vos preocupeis com coisa alguma, mas, em toda ocasião, apresentei a Deus os vossos pedidos, em orações e súplicas, acompanhados de ação de graças",
         "Versiculo":"Filipenses 4:6",
         "Titulo": "Liturgia"
     },
     {
         "Id":"LITURGIAEXTERNA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/brasao-nsc.png",
         "Frase":"Então vocês invocarão, se aproximarão de mim em oração, e eu os ouvirei.",
         "Versiculo":"Jeremias 29:12",
         "Titulo": "Liturgia Externa"
     },
     {
         "Id":"MUSICA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/brasao-nsc.png",
         "Frase":"Venham! Cantemos ao Senhor com alegria! Aclamemos a Rocha da nossa salvação.",
         "Versiculo":"Salmos 95:1",
         "Titulo": "Música"
     },
     {
         "Id":"ORDEMELIMPEZA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/brasao-nsc.png",
         "Frase":"Então, espalharei a água pura sobre vós, e ficareis purificados; de todas as vossas imundícies e de todos os vossos ídolos vos purifiqueis.",
         "Versiculo":"Ezequiel 36:25",
         "Titulo": "Ordem e Limpeza"
     },
     {
         "Id":"SALA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/brasao-nsc.png",
         "Frase":"Como pode o jovem manter pura sua conduta? Vivendo de acordo com a tua palavra.",
         "Versiculo":"Salmos 119:9",
         "Titulo": "Sala"
+    },
+    {
+        "Id":"SECRETARIA",
+        "Imagem": "./img/brasao-nsc.png",
+        "Frase":"Tudo que fizeram, façam de todo o coração, como para o Senhor, e não para os homens",
+        "Versiculo":"Colossenses 3:23",
+        "Titulo": "Secretaria"
     }
 ]

@@ -7,41 +7,48 @@ var equipeAtual = []
 var arrEncontristasAtual = []
 
 $(document).ready(() => {
-    fetchDatabase("../database/base_encontristas.json")
-    .then((result) => {
-        result.forEach(x => { 
-            x.Id = x.Circulo.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            x.Id = x.Id.replace(/[^A-Z0-9]+/ig, "");
-            x.Id = x.Id.toUpperCase();
-        });
 
-        modelEncontristas = result;
-    });
-
-    fetchDatabase("../database/equipes.json")
+    var db = []
+    fetchDatabase("../storage/03578657ba4a23e15998c0f9b230d168.ejc")
     .then((result) => {
-        equipes = result;
+        db = JSON.parse(decode64(result));
     })
-
-
-
-    fetchDatabase("../database/base_v3.json")
-    .then((result) => { 
-        result.forEach(x => { 
-            x.Id = x.Equipe.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            x.Id = x.Id.replace(/[^A-Z0-9]+/ig, "");
-            x.Id = x.Id.toUpperCase();
-            x.Instagram = x.Instagram.replace("@","");
-            x.InstagramTio = x.InstagramTio.replace("@","");
-            x.InstagramTia = x.InstagramTia.replace("@","");
+    .then(() => {
+        fetchCollection(db, "equipes")
+        .then((r) =>{
+            equipes = r;
         });
 
-        groupByKey(result, "Id").then((result) => {
-            model = result;
+        fetchCollection(db, "encontristas")
+        .then((r) =>{
+            r.forEach(x => { 
+                x.Id = x.Circulo.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                x.Id = x.Id.replace(/[^A-Z0-9]+/ig, "");
+                x.Id = x.Id.toUpperCase();
+            });
+    
+            modelEncontristas = r;
         });
-    }).then(() => {
+
+        fetchCollection(db, "respostas")
+        .then((r) =>{
+            r.forEach(x => { 
+                x.Id = x.Equipe.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                x.Id = x.Id.replace(/[^A-Z0-9]+/ig, "");
+                x.Id = x.Id.toUpperCase();
+                x.Instagram = x.Instagram.replace("@","");
+                x.InstagramTio = x.InstagramTio.replace("@","");
+                x.InstagramTia = x.InstagramTia.replace("@","");
+            });
+    
+            groupByKey(r, "Id").then((r2) => {
+                model = r2;
+            });
+        });
+    })
+    .then(() => {
         renderizar();
-    })
+    });
 });
 
 function searchEncontristas() {
@@ -87,9 +94,13 @@ function renderizar(){
 let fetchDatabase = (pathFile) => {
     return new Promise((resolve, reject) => {
         var model = readTextFile(pathFile);
-        var database = JSON.parse(model);
+        resolve(model);
+    });
+}
 
-        resolve(database);
+let fetchCollection = (db, col) => {
+    return new Promise((resolve, reject) => {
+        resolve(db[col]);
     });
 }
 
@@ -410,6 +421,3 @@ function redirectInstagram(username){
         window.location.href = `https://instagram.com/${username}`;
     }
 }
-
-
-

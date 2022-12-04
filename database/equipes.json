@@ -1,28 +1,28 @@
 [
     {
         "Id":"ACOLHIDA",
-        "Imagem": "./img/brasao-nsc.png"   ,
+        "Imagem": "./img/equipes/acolhida.jpg"   ,
         "Frase":"Não vos esqueçam da hospitalidaade, foi praticando-a que, sem o saber, alguns acolheram anjos",
         "Versiculo":"Hebreus 13:2",
         "Titulo": "Acolhida"
     },
     {
         "Id":"CAFEZINHO",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/cafezinho.jpg",
         "Frase":"Portanto, quer comais, quer bebeis ou façais outra qualquer coisa, fazei tudo para a glória de Deus",
         "Versiculo":"1 Coríntios 10:31",
         "Titulo": "Cafezinho"
     },
     {
         "Id":"COMPRASEMINIBAR",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/mini-bar.jpg",
         "Frase":"Jesus lhe disse: Uma coisa ainda te falta: vende tudo que tens, dá aos pobres, e terás um tesouro no céu. Depois vem e segue-me",
         "Versiculo":"Lucas 16:22",
         "Titulo": "Compras e Mini-bar"
     },
     {
         "Id":"COZINHA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/cozinha.jpg",
         "Frase":"E Jesus disse: Eu sou o pão da vida; aquele que vem a mim não terá fome; e quem crê em mim nunca terá sede.",
         "Versiculo":"João 6:35",
         "Titulo": "Cozinha"
@@ -43,7 +43,7 @@
     },
     {
         "Id":"LITURGIA",
-        "Imagem": "./img/equipes/brasao-nsc.png",
+        "Imagem": "./img/equipes/liturgia.jpg",
         "Frase":"Não vos preocupeis com coisa alguma, mas, em toda ocasião, apresentei a Deus os vossos pedidos, em orações e súplicas, acompanhados de ação de graças",
         "Versiculo":"Filipenses 4:6",
         "Titulo": "Liturgia"
@@ -57,28 +57,28 @@
     },
     {
         "Id":"MUSICA",
-        "Imagem": "./img/equipes/brasao-nsc.png",
+        "Imagem": "./img/equipes/musica.jpg",
         "Frase":"Venham! Cantemos ao Senhor com alegria! Aclamemos a Rocha da nossa salvação.",
         "Versiculo":"Salmos 95:1",
         "Titulo": "Música"
     },
     {
         "Id":"ORDEMELIMPEZA",
-        "Imagem": "./img/equipes/brasao-nsc.png",
+        "Imagem": "./img/equipes/ordem.jpg",
         "Frase":"Então, espalharei a água pura sobre vós, e ficareis purificados; de todas as vossas imundícies e de todos os vossos ídolos vos purifiqueis.",
         "Versiculo":"Ezequiel 36:25",
         "Titulo": "Ordem e Limpeza"
     },
     {
         "Id":"SALA",
-        "Imagem": "./img/equipes/brasao-nsc.png",
+        "Imagem": "./img/equipes/sala.jpg",
         "Frase":"Como pode o jovem manter pura sua conduta? Vivendo de acordo com a tua palavra.",
         "Versiculo":"Salmos 119:9",
         "Titulo": "Sala"
     },
     {
         "Id":"SECRETARIA",
-        "Imagem": "./img/brasao-nsc.png",
+        "Imagem": "./img/equipes/secretaria.jpg",
         "Frase":"Tudo que fizeram, façam de todo o coração, como para o Senhor, e não para os homens",
         "Versiculo":"Colossenses 3:23",
         "Titulo": "Secretaria"

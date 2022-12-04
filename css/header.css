@@ -1,0 +1,128 @@
+    #idnavbar{
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .card {
+        border: 1px solid #ddd !important;
+        border-radius: 10px;
+    }
+    
+    .badge {
+        margin-right: 10px;
+        border-radius: 20px;
+        width: 50px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .badge-tio { 
+        background-color: #46b7dd;
+    }
+
+    span.badge-tio::after {
+        content: "Tios";
+    }
+
+    .badge-jovem { 
+        background-color: #6cdf49;
+    }
+
+    span.badge-jovem::after {
+        content: "Jovem";
+    }
+
+
+
+
+    .badge-azul { 
+        background-color: blue;
+    }
+
+    span.badge-azul::after {
+        content: "Azul";
+    }
+
+    .badge-laranja { 
+        background-color: orange;
+    }
+
+    span.badge-laranja::after {
+        content: "Laranja";
+    }
+
+    .badge-rosa { 
+        background-color: pink;
+    }
+
+    span.badge-rosa::after {
+        content: "Rosa";
+    }
+
+    .badge-verde { 
+        background-color: green;
+    }
+
+    span.badge-verde::after {
+        content: "Verde";
+    }
+
+    .badge-amarelo { 
+        background-color: gold;
+    }
+
+    span.badge-amarelo::after {
+        content: "Amarelo";
+    }
+    
+
+    /* Carousel styling */
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+    height: 100vh;
+    }
+
+    .carousel-item:nth-child(1) {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+    .carousel-item:nth-child(2) {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+    .carousel-item:nth-child(3) {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+    @media (min-width: 992px) {
+    #introCarousel {
+        margin-top: -58.59px;
+    }
+    }
+
+    .navbar .nav-link {
+    color: #fff !important;
+    }
+
+    .linkInstagram:hover{
+        cursor: pointer;
+    }
+
+    .c-pointer {
+        cursor: pointer !important;
+    }
+
+    .cardFixedHeight {
+        height: 28rem !important;
+    }

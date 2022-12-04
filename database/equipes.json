@@ -29,14 +29,14 @@
     },
     {
         "Id":"EXTERNA",
-        "Imagem": "./img/equipes/externa.JPG",
+        "Imagem": "./img/equipes/externa.jpg",
         "Frase":"Alegrei-me quando me disseram: Vamos à casa do Senhor.",
         "Versiculo":"Salmos 122:1",
         "Titulo": "Externa"
     },
     {
         "Id":"GERAL",
-        "Imagem": "./img/equipes/geral.JPG",
+        "Imagem": "./img/equipes/geral.jpg",
         "Frase":"Conduz os humildes na justiça e lhes ensina o seu caminho",
         "Versiculo":"Salmos 25:9",
         "Titulo": "Geral"
